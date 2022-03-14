@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="70dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Nueva Cuenta"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/etNuevoUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Usuario:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <EditText
+        android:id="@+id/etRepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña:"
+        android:inputType="textPassword"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/etNuevoUser"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRepass"
+        android:layout_marginTop="40dp"
+        android:onClick="nuevaCuenta"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCrearCuenta"
+        android:layout_marginTop="30dp"
+        android:onClick="abrirLogin"
+        android:text="Si ya tiene una cuenta creada, inicie sesión"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+</RelativeLayout>
